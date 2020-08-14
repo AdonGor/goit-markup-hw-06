@@ -264,8 +264,8 @@ img {
 
 .close-modal {
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 6px;
+    right: 5px;
     width: 18px;
     height: 18px;
 }
