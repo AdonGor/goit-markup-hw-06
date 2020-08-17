@@ -49,7 +49,7 @@
     <!-- Главная -->
     <main>
       <!-- HERO секция -->
-      <section class="hero-section" >
+      <section class="hero-section">
         <div class="section">
           <h1 class="main-header">
             Эффективные решения<br>для вашего бизнеса
@@ -59,9 +59,9 @@
             <div class="modal">
               <button class="modal_close_btn" data-modal-close><svg class="close-modal"><use href="./sprite.svg#icon-close-black"></use></svg></button>
               <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-                <form class="form" autocomplete="off">
+                <form class="form" autocomplete="off"> 
                     <label class="form-field">
-                      <input class="form-input" type="text" name="name" placeholder=" " required/>
+                      <input class="form-input" type="text" autocomplete="new-password" name="name" placeholder=" " required/>
                       <span class="form-label">Имя</span>
                       <svg class="svg-icon-form"><use href="./sprite.svg#icon-personblack"></use></svg>
                     </label>
@@ -72,8 +72,8 @@
                       <svg class="svg-icon-form"><use href="./sprite.svg#icon-phoneblack"></use></svg>                      
                     </label>
 
-                    <label class="form-field">
-                      <input class="form-input" type="mail" name="mail" placeholder=" " required/>
+                    <label class="form-field"> 
+                      <input class="form-input" type="email"  name="email" placeholder=" " required/>
                       <span class="form-label">Почта</span>
                       <svg class="svg-icon-form"><use href="./sprite.svg#icon-emailblack"></use></svg>
                     </label>
@@ -396,9 +396,9 @@
       </div>
       <div>
         <b class="subscribe">Подпишитесь на рассылку</b>
-        <form class="form_footer">
+        <form id="form_footer" autocomplete="off">
           <label class="footer-label">
-            <input class="inputtext" placeholder=" " type="email" name="email" autocomplete="off" required>
+            <input class="inputtext" placeholder=" " type="email" name="email" required>
             <span class="text_email_footer">E-mail</span>
             <a class="modal-button-footer link" href="#">Подписаться<svg class="footer-svg" width="24" height="24"><use href="./sprite.svg#icon-icon"></use></svg></a>
           </label>

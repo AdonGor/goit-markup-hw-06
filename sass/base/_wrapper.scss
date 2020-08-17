@@ -1,6 +1,6 @@
 .wrapper {
-    max-width: 1600px;
-    background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto; 
+  max-width: 1600px;
+  @extend %white-background-color;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
