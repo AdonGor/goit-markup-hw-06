@@ -1,6 +1,6 @@
 .section-features {
   justify-content: center;
-  @extend %white-background-color;
+  background-color: $white-color;
   padding: 94px 0px 47px 0px;
 }
 
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  @extend %whitegrey-background-color;
+  background-color: $whitegrey-background-color;
 }
 
 .features-img {
@@ -40,7 +40,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: $black;
 }
 
 .features-description {

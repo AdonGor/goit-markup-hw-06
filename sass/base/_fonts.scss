@@ -5,7 +5,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @extend %grey-color;
+  color: $grey-color;
 }
 .chapter {
   text-align: center;
@@ -13,7 +13,7 @@
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 42px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $black;
 }

@@ -1,5 +1,5 @@
 .section-work {
-  @extend %white-background-color;
+  background-color: $white-color;
   padding: 47px 0px 94px 0px;
 }
 
@@ -23,5 +23,5 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @extend %white-color;
+  color: $white-color;
 }

@@ -2,14 +2,14 @@
   border-style: none;
   width: 200px;
   padding: 10px 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: $Roboto-font;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  @extend %white-color;
-  background: #2196f3;
+  color: $white-color;
+  background-color: $skyblue-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -40,7 +40,7 @@
   left: 50%;
   padding: 40px 0px;
   min-width: 528px;
-  background-color: #fff;
+  background-color: $white-color;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
@@ -57,12 +57,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
   &:hover {
-    @extend %skyblue-fill;
-    @extend %skyblue-border;
+    fill: $skyblue-color;
+    border: 1px solid $skyblue-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:focus {
-    outline: #ffffff;
+    outline: $white-color;
   }
 }
 
@@ -97,14 +97,14 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-  @extend %grey-color;
+  color: $grey-color;
 }
 
 .form-input {
   width: 348px;
   margin: 0;
   padding: 12px 50px;
-  background: #ffffff;
+  background: $white-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -121,7 +121,7 @@
 
 .form-input:focus:required,
 .form-input-textarea:focus:required {
-  outline-color: #2196f3;
+  outline-color: $skyblue-color;
 }
 
 .form-input-textarea:not(:placeholder-shown) + .form-label-textarea {
@@ -135,13 +135,13 @@
 }
 
 .form-field:focus-within > .svg-icon-form {
-  @extend %skyblue-fill;
+  fill: $skyblue-color;
 }
 
 .form-field:focus-within > .form-label {
   transform: translateY(-40px) translateX(-40px);
   padding-left: 10px;
-  @extend %skyblue-color;
+  color: $skyblue-color;
   font-size: 12px;
 }
 
@@ -155,11 +155,11 @@
   left: 58px;
   transition: translateY(-50%);
   transition: transform 250ms linear;
-  font-family: "Roboto", sans-serif;
+  font-family: $Roboto-font;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-  @extend %grey-color;
+  color: $grey-color;
 }
 
 textarea {
@@ -174,12 +174,12 @@ textarea {
 .form-field:focus-within > .form-label-textarea {
   transform: translateY(-40px) translateX(-40px);
   padding-left: 30px;
-  @extend %skyblue-color;
+  color: $skyblue-color;
   font-size: 12px;
 }
 
 .form-color-link {
-  color: #2196F3;    
+  color: $skyblue-color;
 }
 
 .form-field-checkbox {
@@ -196,14 +196,14 @@ textarea {
 }
 
 .check {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .check_box_text {
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $grey-color;
 }
 
 .check_input {
@@ -218,14 +218,14 @@ justify-content: center;
   margin-right: 10px;
   width: 16px;
   height: 15px;
-  border: 2px solid black;
+  border: 2px solid $black;
   border-radius: 2px;
 }
 
 .check_input:checked + .check_box {
-  background-image: url('../img/1hero/iconcheck.svg');
+  background-image: url("../img/1hero/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
-  border: 1px solid #2196F3;
+  border: 1px solid $skyblue-color;
   border-radius: 2px;
 }

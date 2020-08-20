@@ -31,7 +31,7 @@
 
 .address-footer {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: $Roboto-font;
   font-style: normal;
 }
 
@@ -46,11 +46,11 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  @extend %white-color;
+  color: $white-color;
 }
 
 .word-white {
-  @extend %white-color;
+  color: $white-color;
 }
 
 .join-in-container {
@@ -65,7 +65,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @extend %white-color;
+  color: $white-color;
 }
 
 .footer-svg-link {
@@ -74,13 +74,13 @@
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  @extend %white-color;
+  color: $white-color;
   justify-content: center;
   align-items: center;
   &:hover,
   &:focus {
-    @extend %skyblue-background-color;
-    color: #fff;
+    background-color: $skyblue-color;
+    color: $white-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -98,14 +98,14 @@
 .subscribe {
   display: block;
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: $Roboto-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @extend %white-color;
+  color: $white-color;
 }
 
 .footer-label {
@@ -118,7 +118,7 @@
   height: 49.3px;
   padding: 0px 20px;
   margin-right: 12px;
-  @extend %white-color;
+  color: $white-color;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -140,23 +140,23 @@
 }
 
 .text_email_footer:focus:required {
-  color: #fff;
+  color: $white-color;
   font-size: 10px;
 }
 
 .footer-label:focus-within > .text_email_footer {
-  color: #fff;
+  color: $white-color;
 }
 
 .footer-label:focus-within > .text_email_footer {
   transform: translateY(-30px);
-  color: #fff;
+  color: $white-color;
   font-size: 10px;
 }
 
 .inputtext:not(:placeholder-shown) + .text_email_footer {
   transform: translateY(-30px);
-  color: #fff;
+  color: $white-color;
   font-size: 10px;
 }
 
@@ -168,8 +168,8 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  @extend %white-color;
-  @extend %skyblue-background-color;
+  color: $white-color;
+  background-color: $skyblue-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
